@@ -1,0 +1,70 @@
+@import 'reset.css';
+@font-face {
+  font-family: "felix titling";
+  src: url("../fonts/felix titling.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  }
+  @font-face {
+    font-family: "helvetica";
+    src: url("../fonts/helvetica.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
+  h1, h2 {
+    font-family: "felix titling";
+    color: #ffffff;
+    font-size: 150px;
+    margin: 0 0;
+    letter-spacing: 1px;
+  }
+  h5 {
+    font-family: 'helvetica';
+    font-size: 46px;
+    color: #ffffff;
+    margin: 0 0;
+    letter-spacing: 1px;
+  }
+body {
+width: 1680px;
+background: #000000;
+position: relative;
+height: 3690px;
+}
+html {
+background: #bbb;
+position: relative;
+height: 100%;
+}
+.logo{
+  width: 712px;
+  hight: 182px;
+  position: relative;
+  top: 100px;
+  left: 130px;
+
+}
+.octopus1{
+  position: relative;
+  transform: rotate(45deg);
+  width: 750px;
+  top: -70px;
+  left: 1090px;
+  /* margin: 0 0; */
+}
+
+
+
+
+/* @keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-360deg);
+    }
+}
+
+.hue {
+    animation: hue 10s infinite linear;
+ } */
