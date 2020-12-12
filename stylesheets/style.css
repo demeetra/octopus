@@ -5,39 +5,34 @@
   font-style: normal;
   font-weight: normal;
   }
-  @font-face {
-    font-family: "helvetica";
-    src: url("../fonts/helvetica.ttf") format('truetype');
-    font-style: normal;
-    font-weight: normal;
-    }
-    body {
+@font-face {
+  font-family: "helvetica";
+  src: url("../fonts/helvetica.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+  body {
     width: 1680px;
     background: #000000;
     position: relative;
     height: 3690px;
-    }
-    html {
+  }
+  html {
     background: #bbb;
     position: relative;
     height: 100%;
-    }
-
-  h1, h2 {
-    font-family: "felix titling";
-    color: #ffffff;
-    margin: 0 0;
-    letter-spacing: 1px;
   }
+  h1, h2, h5, h6{
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 0 0;
+  }
+  h1, h2 {font-family: "felix titling";}
+  h6, h5 {font-family: 'helvetica';}
   h1{font-size: 150px;}
-
-  h5 {
-    font-family: 'helvetica';
-    font-size: 46px;
-    color: #ffffff;
-    margin: 0 0;
-    letter-spacing: 1px;
-  }
+  h2{font-size: 72px;}
+  h5{font-size: 46px;}
+  h6{font-size: 36px;}
 
 .logo{
   width: 712px;
@@ -46,18 +41,18 @@
   top: 100px;
   left: 130px;
   z-index: 2;
-
 }
 .firstoctopus{
-  position: absolute;
+  position: relative;
   overflow: hidden;
   width: 1680px;
-  height: 1180px;
+  height: 1200px;
   top: 0;
   left: 0;
   z-index: 1;
-
 }
+.fluffs{position: absolute;}
+
 .octopus1{
     transform: rotate(45deg);
     top: -70px;
@@ -72,18 +67,62 @@
   width: 76px;
   animation: hue 4s infinite linear;
 }
+.fluf:hover{
+  animation-play-state: paused;
+}
+.f1 {top: 80px;   left: 1000px;}
+.f2 {top: 268px;  left: 986px;}
+.f3 {top: 420px;  left: 824px;}
+.f4 {top: 334px;  left: 1148px;}
+.f5 {top: 580px;  left: 900px;}
+.f6 {top: 894px;  left: 586px;}
+.f7 {top: 780px;  left: 464px;}
+.f8 {top: 578px;  left: 680px;}
+.f9 {top: 436px;  left: 536px;}
+.f10{top: 594px;  left: 382px;}
+.f11{top: 410px;  left: 206px;}
+.f12{top: 360px;  left: 1398px;}
+.f13{top: 566px;  left: 1186px;}
+.f14{top: 946px;  left: 1186px;}
+.f15{top: 566px;  left: 1374px;}
+.f16{top: 768px;  left: 1572px;}
+.f17{top: 546px;  left: 1536px;}
 
-.f1{top: 80px;  left: 1000px;}
-.f2{top: 268px;  left: 986px;}
-.f3{top: 420px;  left: 824px;}
-.f4{top: 334px;  left: 1148px;}
-.f5{top: 580px;  left: 900px;}
-.f6{top: 894px;  left: 586px;}
-.f7{top: 780px;  left: 464px;}
-.f8{top: 578px;  left: 680px;}
+.row{
+  width: 7100px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  animation: row-move 30s linear infinite;
+}
+.row:hover{animation-play-state: paused;}
+.return{
+  animation: row-move-return 30s linear infinite;
+}
+.legline{
+  position: relative;
+  display: inline-block;
+}
+.fl1{width: 88px; height: 88px;}
 
+.text-center{
+  position: relative;
+  width: 1264px;
+  margin: 78px 140px;
+  line-height: 64px;
+}
+.text-center h6{
+  margin-top: 114px;
+}
 
-
+@keyframes row-move {
+  0% {right: 0px;}
+  100% {right: 100%;}
+}
+@keyframes row-move-return {
+  0% {right: 100%;}
+  100% {right: 0px;}
+}
 @keyframes hue {
     /* green */
     0%    {filter: brightness(50%) sepia(1) hue-rotate(38deg)  saturate(295%)  brightness(110%);}
