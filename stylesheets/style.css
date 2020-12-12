@@ -114,7 +114,33 @@
 .text-center h6{
   margin-top: 114px;
 }
+.best-haircuts{
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+.boom{
+  position: relative;
+  display: inline-block;
+  height: 582px;
+  width: 502px;
+  text-align: center;
+  margin: 100px 20px;
+}
+.boom1{
+  height: 500px;
+  width: 500px;
+  display: block;
+  position: absolute;
+  background: url('../images/boom1.png');
+  overflow: hidden;
+  animation: boom 3s steps(1) infinite;
+  animation-play-state: paused;
 
+}
+.boom1:hover{
+  animation-play-state: running;
+}
 @keyframes row-move {
   0% {right: 0px;}
   100% {right: 100%;}
@@ -133,4 +159,30 @@
     /* pink */
     66.6% {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
     100%  {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
+  }
+  @keyframes boom {
+    0%    {background-position: 0px -20px;}
+    4.3%  {background-position: -500px -20px;}
+    8.6%  {background-position: -1000px -20px;}
+    12.9% {background-position: -1500px -20px;}
+    16.2% {background-position: -2000px -20px;}
+    20.5% {background-position: -2500px -20px;}
+    24.8% {background-position: -3000px -20px;}
+    29.1% {background-position: -3500px -20px;}
+    33.4% {background-position: -4000px -20px;}
+    37.7% {background-position: -4500px -20px;}
+    42%   {background-position: -5000px -20px;}
+    46.3% {background-position: -5500px -20px;}
+    50.6% {background-position: -6000px -20px;}
+    54.9% {background-position: -6500px -20px;}
+    59.2% {background-position: -7000px -20px;}
+    63.5% {background-position: -7500px -20px;}
+    67.8% {background-position: -8000px -20px;}
+    72.1% {background-position: -8500px -20px;}
+    76.4% {background-position: -9000px -20px;}
+    80.7% {background-position: -9500px -20px;}
+    85%   {background-position: -10000px -20px;}
+    89.3% {background-position: -10500px -20px;}
+    93.6% {background-position: -20000px -20px;}
+
   }
