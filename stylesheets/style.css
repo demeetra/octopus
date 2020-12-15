@@ -7,12 +7,12 @@
   }
 @font-face {
   font-family: "helvetica";
-  src: url("../fonts/helvetica.ttf") format('truetype');
+  src: url("../fonts/helvetica.otf") format('opentype');
   font-style: normal;
   font-weight: normal;
 }
   body {
-    width: 1680px;
+    width: 100%;
     background: #000000;
     position: relative;
     height: 3690px;
@@ -31,7 +31,7 @@
   h6, h5 {font-family: 'helvetica';}
   h1{font-size: 150px;}
   h2{font-size: 72px;}
-  h5{font-size: 46px;}
+  h5{font-size: 44px; text-align: center;}
   h6{font-size: 36px;}
                                                                       /* логотип Октопуса */
 .logo{
@@ -128,16 +128,16 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 582px;
-  width: 502px;
+  height: 580px;
+  width: 500px;
   text-align: center;
   margin: 100px 20px;
-  background: #1233f3;
-  opacity: .3;
+  /* background: #1233f3; */
+  /* opacity: .3; */
 }
 .boom1{
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
   display: block;
   position:relative;
   background: url('../images/boom1.png');
@@ -164,28 +164,28 @@
     100%  {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
   }
   @keyframes boom {
-    0%    {background-position:  0px     -20px;}
-    4.3%  {background-position: -500px   -20px;}
-    8.6%  {background-position: -1000px  -20px;}
-    12.9% {background-position: -1500px  -20px;}
-    16.2% {background-position: -2000px  -20px;}
-    20.5% {background-position: -2500px  -20px;}
-    24.8% {background-position: -3000px  -20px;}
-    29.1% {background-position: -3500px  -20px;}
-    33.4% {background-position: -4000px  -20px;}
-    37.7% {background-position: -4500px  -20px;}
-    42%   {background-position: -5000px  -20px;}
-    46.3% {background-position: -5500px  -20px;}
-    50.6% {background-position: -6000px  -20px;}
-    54.9% {background-position: -6500px  -20px;}
-    59.2% {background-position: -7000px  -20px;}
-    63.5% {background-position: -7500px  -20px;}
-    67.8% {background-position: -8000px  -20px;}
-    72.1% {background-position: -8500px  -20px;}
-    76.4% {background-position: -9000px  -20px;}
-    80.7% {background-position: -9500px  -20px;}
-    85%   {background-position: -10000px -20px;}
-    89.3% {background-position: -10500px -20px;}
-    93.6% {background-position: -20000px -20px;}
+    0%    {background-position:  0px     -0px;}
+    4.3%  {background-position: -500px   -0px;}
+    8.6%  {background-position: -1000px  -0px;}
+    12.9% {background-position: -1500px  -0px;}
+    16.2% {background-position: -2000px  -0px;}
+    20.5% {background-position: -2500px  -0px;}
+    24.8% {background-position: -3000px  -0px;}
+    29.1% {background-position: -3500px  -0px;}
+    33.4% {background-position: -4000px  -0px;}
+    37.7% {background-position: -4500px  -0px;}
+    42%   {background-position: -4000px  -0px;}
+    46.3% {background-position: -5500px  -0px;}
+    50.6% {background-position: -6000px  -0px;}
+    54.9% {background-position: -6500px  -0px;}
+    59.2% {background-position: -7000px  -0px;}
+    63.5% {background-position: -7500px  -0px;}
+    67.8% {background-position: -8000px  -0px;}
+    72.1% {background-position: -8500px  -0px;}
+    76.4% {background-position: -9000px  -0px;}
+    80.7% {background-position: -9500px  -0px;}
+    85%   {background-position: -10000px -0px;}
+    89.3% {background-position: -10500px -0px;}
+    93.6% {background-position: -20000px -0px;}
 
   }
