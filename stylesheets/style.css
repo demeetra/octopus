@@ -67,9 +67,8 @@
   width: 76px;
   animation: hue 4s infinite linear;
 }
-.fluf:hover{
-  animation-play-state: paused;
-}
+.fluf:hover{  animation-play-state: paused;}
+
 .f1 {top: 80px;   left: 1000px;}
 .f2 {top: 268px;  left: 986px;}
 .f3 {top: 420px;  left: 824px;}
@@ -96,9 +95,9 @@
   animation: row-move 30s linear infinite;
 }
 .row:hover{animation-play-state: paused;}
-.return{
-  animation: row-move-return 30s linear infinite;
-}
+
+.return{  animation: row-move-return 30s linear infinite;}
+
 .legline{
   position: relative;
   display: inline-block;
@@ -111,9 +110,8 @@
   margin: 78px 140px;
   line-height: 64px;
 }
-.text-center h6{
-  margin-top: 114px;
-}
+.text-center h6{  margin-top: 114px;}
+
 .best-haircuts{
   position: relative;
   text-align: center;
@@ -140,9 +138,8 @@
   animation-play-state: paused;
 
 }
-.boom1:hover{
-  animation-play-state: running;
-}
+.boom1:hover{  animation-play-state: running;}
+
 @keyframes row-move {
   0% {right: 0px;}
   100% {right: 100%;}
