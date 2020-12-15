@@ -126,12 +126,14 @@
   width: 502px;
   text-align: center;
   margin: 100px 20px;
+  background: #1233f3;
+  opacity: .3;
 }
 .boom1{
   height: 500px;
   width: 500px;
   display: block;
-  position: absolute;
+  position:relative;
   background: url('../images/boom1.png');
   overflow: hidden;
   animation: boom 3s steps(1) infinite;
