@@ -1,15 +1,52 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orienta) {
-  /* iPad Landscape */
-  .logo{
-    position: relative;
-    margin: auto;
-  }
 
-}
 @media only screen and (orientation: portrait) {
   .firstoctopus {
     transform: rotate(-45deg);
     overflow: visible;
+    top: 27%;
+    left: -7%;
+      }
+  .logo{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    text-align: center;
+  }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px){
+/* 320–475 (iPhone SE) */
+  h1{font-size: 48px;}
+  h2{font-size: 14px;}
+  h5{font-size: 14px;}
+  h6{font-size: 18px;}
+  body::before {background:url('images/fon.png');}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  /* iPad portrait */
+  h1{font-size: 110px;}
+  h2{font-size: 36px;}
+  h5{font-size: 32px;}
+  h6{font-size: 34px;}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1080px){
+/* 1024x768 (iPad Landscape) */
+}
+@media only screen and (min-width: 1080px) and (max-width: 1280px){
+/* 1280x800 (MacBook Pro ’13) */
+}
+@media only screen and (min-width: 1366px) and (max-width: 1440px){
+  /* 1366x768 (MacBook Air ’11.6) */
+}
+@media only screen and (min-width: 1440px) and (max-width: 1680px){
+  /* 1440x900 (MacBook Pro ’15) */
+}
+@media only screen and (min-width: 1680px) {
+/* 1680x1050 (MacBook Pro ’15.4) */
+  h1{font-size: 150px;}
+  h2{font-size: 72px;}
+  h5{font-size: 44px; text-align: center;}
+  h6{font-size: 36px;}
 }

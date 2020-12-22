@@ -31,18 +31,17 @@
   }
   h1, h2 {font-family: "felix titling";}
   h6, h5 {font-family: 'helvetica';}
-  h1{font-size: 150px;}
-  h2{font-size: 72px;}
-  h5{font-size: 44px; text-align: center;}
-  h6{font-size: 36px;}
+
                                                                       /* логотип Октопуса */
 .logo{
-  width: 712px;
+  max-width: 712px;
+  width: 100%;
   height: 182px;
   position: absolute;
   top: 100px;
   left: 130px;
   z-index: 2;
+
 
 }
                                                                   /* первый див с Октопусом (принадлежит к телу и пушинкам) */
@@ -98,28 +97,27 @@
 .row {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    width: 100%;
+    padding-bottom: 12.5%;
 }
 
 .row_after, .row_before {
     content: "";
     position: absolute;
-    width: 4456px;
+    width: 300%;
     height: 100%;
     animation: move 30s linear infinite;
 }
+
 .row_before {
     right: 100%;
 }
 .reverse {
   animation: move 30s linear infinite reverse;
   }
-
-.legline{
-  position: relative;
-  display: inline-block;
+.colbasa{
+  height: 100%;
 }
-.fl1{width: 88px; height: 88px;}
 
                                                                               /* центральный блок с текстом */
 .text-center{
