@@ -146,8 +146,8 @@
   width: 500px;
   text-align: center;
   margin: 100px 20px;
-  background: #1233f3;
-  opacity: .3;
+  /* background: #1233f3;
+  opacity: .3; */
 }
 .boom1{
   height: 100%;
