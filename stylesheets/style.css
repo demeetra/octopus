@@ -1,4 +1,5 @@
 @import 'reset.css';
+/* @import 'responsive.css'; */
 @font-face {
   font-family: "felix titling";
   src: url("../fonts/felix titling.ttf") format('truetype');
@@ -12,6 +13,7 @@
   font-weight: normal;
 }
   body {
+    max-width: 1680px;
     width: 100%;
     background: #000000;
     position: relative;
@@ -41,53 +43,58 @@
   top: 100px;
   left: 130px;
   z-index: 2;
+
 }
-                                                                  /* первый див с Октопусом (принадлежит и телу и пушинкам) */
-.firstoctopus{
+                                                                  /* первый див с Октопусом (принадлежит к телу и пушинкам) */
+.block1{
   position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+}
+.firstoctopus{
+  position:absolute;
   overflow: hidden;
-  width: 1680px;
-  height: 1200px;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 1;
 }
 .octopus1{
-    transform: rotate(45deg);
-    top: -70px;
-    left: 388px;
-    width: 1300px;
-    height: 1234px;
+    top: calc((100% * (-70)) / 1260);
+    left: calc((100% * 388) / 1680);
+    width:  calc((100% * 1300) / 1680);
+    height:  calc((100% * 1234) / 1260);
     position: absolute;
+    transform: rotate(45deg);
 }
                                                                         /*здесь начинаются пушинки*/
-.fluffs{position: absolute;}
 .fluf{
   position: absolute;
-  height: 76px;
-  width: 76px;
+  height:  calc((100% * 76) / 1260);
+  width: calc((100% * 76) / 1680);
   animation: hue 4s infinite linear;
 }
 .fluf:hover{  animation-play-state: paused;}
 
-.f1 {top: 80px;   left: 1000px;}
-.f2 {top: 268px;  left: 986px;}
-.f3 {top: 420px;  left: 824px;}
-.f4 {top: 334px;  left: 1148px;}
-.f5 {top: 580px;  left: 900px;}
-.f6 {top: 894px;  left: 586px;}
-.f7 {top: 780px;  left: 464px;}
-.f8 {top: 578px;  left: 680px;}
-.f9 {top: 436px;  left: 536px;}
-.f10{top: 594px;  left: 382px;}
-.f11{top: 410px;  left: 206px;}
-.f12{top: 360px;  left: 1398px;}
-.f13{top: 566px;  left: 1186px;}
-.f14{top: 946px;  left: 1186px;}
-.f15{top: 566px;  left: 1374px;}
-.f16{top: 768px;  left: 1572px;}
-.f17{top: 546px;  left: 1536px;}
-
+.f1 {top: calc((100% * 80) / 1260);   left: calc((100% * 1000) / 1680);}
+.f2 {top: calc((100% * 268) / 1260);  left: calc((100% * 986) / 1680);}
+.f3 {top: calc((100% * 420) / 1260);  left: calc((100% * 824) / 1680);}
+.f4 {top: calc((100% * 334) / 1260);  left: calc((100% * 1148) / 1680);}
+.f5 {top: calc((100% * 580) / 1260);  left: calc((100% * 900) / 1680);}
+.f6 {top: calc((100% * 894) / 1260);  left: calc((100% * 586) / 1680);}
+.f7 {top: calc((100% * 780) / 1260);  left: calc((100% * 464) / 1680);}
+.f8 {top: calc((100% * 578) / 1260);  left: calc((100% * 680) / 1680);}
+.f9 {top: calc((100% * 436) / 1260);  left: calc((100% * 536) / 1680);}
+.f10{top: calc((100% * 594) / 1260);  left: calc((100% * 382) / 1680);}
+.f11{top: calc((100% * 410) / 1260);  left: calc((100% * 206) / 1680);}
+.f12{top: calc((100% * 360) / 1260);  left: calc((100% * 1398) / 1680);}
+.f13{top: calc((100% * 566) / 1260);  left: calc((100% * 1186) / 1680);}
+.f14{top: calc((100% * 946) / 1260);  left: calc((100% * 1186) / 1680);}
+.f15{top: calc((100% * 566) / 1260);  left: calc((100% * 1374) / 1680);}
+.f16{top: calc((100% * 768) / 1260);  left: calc((100% * 1572) / 1680);}
+.f17{top: calc((100% * 546) / 1260);  left: calc((100% * 1536) / 1680);}
+                                                                             /*блок с бегущими строками*/
 .row {
     position: relative;
     overflow: hidden;
@@ -106,7 +113,7 @@
 }
 .reverse {
   animation: move 30s linear infinite reverse;
-  }                                                                      /*блок с бегущими строками*/
+  }
 
 .legline{
   position: relative;
@@ -117,7 +124,7 @@
                                                                               /* центральный блок с текстом */
 .text-center{
   position: relative;
-  width: 1264px;
+  width: 100%;
   margin: 78px 140px;
   line-height: 64px;
 }
@@ -137,8 +144,8 @@
   width: 500px;
   text-align: center;
   margin: 100px 20px;
-  /* background: #1233f3; */
-  /* opacity: .3; */
+  background: #1233f3;
+  opacity: .3;
 }
 .boom1{
   height: 100%;

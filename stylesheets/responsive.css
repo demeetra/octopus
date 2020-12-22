@@ -1,4 +1,15 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orienta) {
   /* iPad Landscape */
-  
+  .logo{
+    position: relative;
+    margin: auto;
+  }
+
+}
+@media only screen and (orientation: portrait) {
+  .firstoctopus {
+    transform: rotate(-45deg);
+    overflow: visible;
+}
+
 }
