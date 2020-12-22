@@ -18,51 +18,51 @@
 
 @media only screen and (min-width: 320px) and (max-width: 768px){
 /* 320–475 (iPhone SE) */
-  h1{font-size: 48px;}
+  /* h1{font-size: 48px;}
   h2{font-size: 14px;}
   h5{font-size: 14px;}
-  h6{font-size: 18px;}
+  h6{font-size: 18px;} */
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   /* iPad portrait */
-  h1{font-size: 110px;}
+  /* h1{font-size: 110px;}
   h2{font-size: 36px;}
   h5{font-size: 32px;}
-  h6{font-size: 34px;}
+  h6{font-size: 34px;} */
 }
 @media only screen and (min-width: 1024px) and (max-width: 1080px){
 /* 1024x768 (iPad Landscape) */
-h1{font-size: 96px;}
+/* h1{font-size: 96px;}
 h2{font-size: 36px;}
 h5{font-size: 28px;}
-h6{font-size: 34px;}
+h6{font-size: 34px;} */
 }
 @media only screen and (min-width: 1080px) and (max-width: 1280px){
 /* 1280x800 (MacBook Pro ’13) */
-h1{font-size: 116px;}
+/* h1{font-size: 116px;}
 h2{font-size: 48px;}
 h5{font-size: 34px;}
-h6{font-size: 34px;}
+h6{font-size: 34px;} */
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px){
   /* 1366x768 (MacBook Air ’11.6) */
-  h1{font-size: 116px;}
+  /* h1{font-size: 116px;}
   h2{font-size: 48px;}
   h5{font-size: 36px;}
-  h6{font-size: 36px;}
+  h6{font-size: 36px;} */
 }
 @media only screen and (min-width: 1440px) and (max-width: 1680px){
   /* 1440x900 (MacBook Pro ’15) */
-  h1{font-size: 114px;}
+  /* h1{font-size: 114px;}
   h2{font-size: 48px;}
   h5{font-size: 56px;}
-  h6{font-size: 40px;}
+  h6{font-size: 40px;} */
 }
 @media only screen and (min-width: 1680px) {
 /* 1680x1050 (MacBook Pro ’15.4) */
-  h1{font-size: 150px;}
+  /* h1{font-size: 150px;}
   h2{font-size: 72px;}
   h5{font-size: 44px;}
-  h6{font-size: 36px;}
+  h6{font-size: 36px;} */
 }

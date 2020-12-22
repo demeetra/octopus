@@ -31,6 +31,10 @@
   }
   h1, h2 {font-family: "felix titling";}
   h6, h5 {font-family: 'helvetica';}
+  h1{font-size: min(150px, calc(150 * (100vw - 320px) / 1360 + 48 * (1680px - 100vw) / 1360));}
+  h2{font-size: min(72px, calc(72 * (100vw - 320px) / 1360 + 14 * (1680px - 100vw) / 1360));}
+  h5{font-size: min(44px, calc(44 * (100vw - 320px) / 1360 + 14 * (1680px - 100vw) / 1360));}
+  h6{font-size: min(36px, calc(36 * (100vw - 320px) / 1360 + 18 * (1680px - 100vw) / 1360));}
 
                                                                       /* логотип Октопуса */
 .logo{
@@ -57,7 +61,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+
 }
 .octopus1{
     top: calc((100% * (-70)) / 1260);
