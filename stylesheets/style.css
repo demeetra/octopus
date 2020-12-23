@@ -78,8 +78,8 @@
   width: calc((100% * 76) / 1680);
   animation: hue 4s infinite linear;
 }
-
-.fluf:hover{  animation-play-state: paused;}
+/*
+.fluf:hover{  animation-play-state: paused;} */
 
 .f1 {top: calc((100% * 80) / 1260);   left: calc((100% * 1000) / 1680);}
 .f2 {top: calc((100% * 268) / 1260);  left: calc((100% * 986) / 1680);}
@@ -111,14 +111,14 @@
     position: absolute;
     width: 300%;
     height: 100%;
-    animation: move 30s linear infinite;
+    animation: row_move 30s linear infinite;
 }
 
 .row_before {
     right: 100%;
 }
 .reverse {
-  animation: move 30s linear infinite reverse;
+  animation: row_move 30s linear infinite reverse;
   }
 .colbasa{
   height: 100%;
@@ -166,75 +166,140 @@
 .block2{
   position: relative;
   width: 100%;
-  height: 620px;
+  padding-bottom: 37%;
   /* background-color: #ffffff;
   opacity: .2; */
 }
 
 .octopus2{
   position: absolute;
+
 }
 .f{
   height:  calc((100% * 45) / 620);
   width: calc((100% * 45) / 1680);
 }
-.f18{top: 508px; left: 328px;}
-.f19{top: 508px; left: 52px;}
-.f20{top: 366px; left: 52px;}
-.f21{top: 176px; left: 596px;}
-.f22{top: 176px; left: 452px;}
-.f23{top: 366px; left: 452px;}
-.f24{top: 366px; left: 316px;}
-.f25{top: 176px; left: 316px;}
-.f26{top: 176px; left: 150px;}
-.f27{top: 366px; left: 716px;}
-.f28{top: 348px; left: 786px;}
-.f29{top: 158px; left: 786px;}
-.f30{top: 158px; left: 878px;}
-.f31{top: -12px; left: 878px;}
-.f32{top: 474px; left: 954px;}
-.f33{top: 266px; left: 1030px;}
-.f34{top: 266px; left: 1170px;}
-.f35{top: 94px; left: 1170px;}
-.f36{top: 94px; left: 1446px;}
-.f37{top: 406px; left: 1202px;}
-.f38{top: 308px; left: 1308px;}
-.f39{top: 308px; left: 1580px;}
+.oc1{
+  height:  calc((100% * 61) / 620);
+  width: calc((100% * 230) / 1680);
+}
+.oc2{
+  height:  calc((100% * 53) / 620);
+  width: calc((100% * 97) / 1680);
+}
+.oc3{
+  height:  calc((100% * 25) / 620);
+  width: calc((100% * 60) / 1680);
+}
+.oc4{
+  height:  calc((100% * 50) / 620);
+  width: calc((100% * 331) / 1680);
+}
+.oc5{
+  height:  calc((100% * 25) / 620);
+  width: calc((100% * 146) / 1680);
+}
+.oc6{
+  height:  calc((100% * 43) / 620);
+  width: calc((100% * 123) / 1680);
+}
+.f18{top: calc((100% *  508) / 620); left: calc((100% * 328)  / 1680);}
+.f19{top: calc((100% *  508) / 620); left: calc((100% *  52)  / 1680);}
+.f20{top: calc((100% *  366) / 620); left: calc((100% *  52)  / 1680);}
+.f21{top: calc((100% *  176) / 620); left: calc((100% *  596) / 1680);}
+.f22{top: calc((100% *  176) / 620); left: calc((100% *  452) / 1680);}
+.f23{top: calc((100% *  366) / 620); left: calc((100% *  452) / 1680);}
+.f24{top: calc((100% *  366) / 620); left: calc((100% *  316) / 1680);}
+.f25{top: calc((100% *  176) / 620); left: calc((100% *  316) / 1680);}
+.f26{top: calc((100% *  176) / 620); left: calc((100% *  150) / 1680);}
+.f27{
+  animation: f27 3s infinite, hue 4s infinite linear;
+}
+.f28{top: calc((100% *  348) / 620); left: calc((100% *  786) / 1680);}
+.f29{top: calc((100% *  158) / 620); left: calc((100% *  786) / 1680);}
+.f30{top: calc((100% *  158) / 620); left: calc((100% *  878) / 1680);}
+.f31{top: calc((100% *  -12) / 620); left: calc((100% *  878) / 1680);}
+.f32{top: calc((100% *  474) / 620); left: calc((100% *  954) / 1680);}
+.f33{top: calc((100% *  266) / 620); left: calc((100% *  1030) / 1680);}
+.f34{top: calc((100% *  266) / 620); left: calc((100% *  1170) / 1680);}
+.f35{top: calc((100% *  94)  / 620); left: calc((100% *  1170) / 1680);}
+.f36{top: calc((100% *  94)  / 620); left: calc((100% *  1446) / 1680);}
+.f37{top: calc((100% *  406) / 620); left: calc((100% *  1202) / 1680);}
+.f38{top: calc((100% *  308) / 620); left: calc((100% *  1308) / 1680);}
+.f39{top: calc((100% *  308) / 620); left: calc((100% *  1580) / 1680);}
 
-.head {top: 520px; left: 588px;}
-.leg1 {top: 482px; left: 374px;}
-.leg2 {top: 520px; left: 98px; transform: rotate(180deg);}
-.leg3 {top: 432px; left: 40px; transform: rotate(90deg);}
-.leg4 {top: 324px; left: 40px; transform: rotate(90deg);}
-.leg5 {top: 360px; left: 440px; transform: rotate(-90deg);}
-.leg6 {top: 156px; left: 498px;}
-.leg7 {top: 280px; left: 402px; transform: rotate(90deg);}
-.leg8 {top: 350px; left: 358px;}
-.leg9 {top: 280px; left: 266px; transform: rotate(90deg);}
-.leg10{top: 184px; left: 194px; transform: rotate(180deg);}
-.leg11{top: 130px; left: 142px; transform: rotate(90deg) scaleY(-1);}
-.leg12{top: 448px; left: 668px; transform: rotate(-90deg);}
-.leg13{top: 376px; left: 656px; transform: scaleY(-1);}
-.leg14{top: 452px; left: 736px; transform: rotate(90deg);}
-.leg15{top: 260px; left: 736px; transform: rotate(90deg);}
-.leg16{top: 166px; left: 726px; transform: scaleY(-1);}
-.leg17{top: 342px; left: 748px; transform: rotate(90deg);}
-.leg18{top: 72px; left: 848px; transform: rotate(90deg);}
-.leg19{top: 0px; left: 926px; transform: rotate(180deg);}
-.leg20{top: 432px; left: 946px; transform: rotate(90deg);}
-.leg21{top: 396px; left: 954px; transform: rotate(90deg);}
-.leg22{top: 248px; left: 1072px;}
-.leg23{top: 180px; left: 1140px; transform: rotate(90deg);}
-.leg24{top: 66px; left: 1214px;}
-.leg25{top: 48px; left: 1438px; transform: rotate(90deg);}
-.leg26{top: 486px; left: 1082px; transform: rotate(-45deg);}
-.leg27{top: 362px; left: 1238px; transform: rotate(135deg);}
-.leg28{top: 280px; left: 1352px;}
-.leg29{top: 268px; left: 1572px; transform: rotate(90deg);}
+
+.head {
+  top: calc((100% *  520) / 620); left: calc((100% *  588) / 1680);
+  height:  calc((100% * 96) / 620);
+  width: calc((100% * 552) / 1680);
+}
+.leg1 {top: calc((100% *  482) / 620); left: calc((100% *  374) / 1680);}
+.leg2 {top: calc((100% *  520) / 620); left: calc((100% *  98)  / 1680); transform: rotate(180deg);}
+.leg3 {top: calc((100% *  432) / 620); left: calc((100% *  40)  / 1680); transform: rotate(90deg);}
+.leg4 {top: calc((100% *  324) / 620); left: calc((100% *  40)  / 1680); transform: rotate(90deg);}
+.leg5 {top: calc((100% *  360) / 620); left: calc((100% *  440) / 1680); transform: rotate(-90deg);}
+.leg6 {top: calc((100% *  156) / 620); left: calc((100% *  498) / 1680);}
+.leg7 {top: calc((100% *  280) / 620); left: calc((100% *  402) / 1680); transform: rotate(90deg);}
+.leg8 {top: calc((100% *  350) / 620); left: calc((100% *  358) / 1680);}
+.leg9 {top: calc((100% *  280) / 620); left: calc((100% *  266) / 1680); transform: rotate(90deg);}
+.leg10{top: calc((100% *  184) / 620); left: calc((100% *  194) / 1680); transform: rotate(180deg);}
+.leg11{top: calc((100% *  130) / 620); left: calc((100% *  142) / 1680); transform: rotate(90deg) scaleY(-1);}
+.leg12{
+    animation: leg12 3s infinite;
+}
+.leg13{
+    animation: leg13 3s infinite;
+}
+.leg14{top: calc((100% *  452) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
+.leg15{top: calc((100% *  260) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
+.leg16{top: calc((100% *  166) / 620); left: calc((100% *  726) / 1680); transform: scaleY(-1);}
+.leg17{top: calc((100% *  342) / 620); left: calc((100% *  748) / 1680); transform: rotate(90deg);}
+.leg18{top: calc((100% *  72)  / 620); left: calc((100% *  848) / 1680); transform: rotate(90deg);}
+.leg19{top: calc((100% *  0)   / 620); left: calc((100% *  926) / 1680); transform: rotate(180deg);}
+.leg20{
+  top: calc((100% *  432) / 620);
+  animation: leg20 3s infinite;
+}
+.leg21{top: calc((100% *  396) / 620); left: calc((100% *  954) / 1680); transform: rotate(90deg);}
+.leg22{top: calc((100% *  248) / 620); left: calc((100% *  1072) / 1680);}
+.leg23{top: calc((100% *  180) / 620); left: calc((100% *  1140) / 1680); transform: rotate(90deg);}
+.leg24{top: calc((100% *  66)  / 620); left: calc((100% *  1214) / 1680);}
+.leg25{top: calc((100% *  48)  / 620); left: calc((100% *  1438) / 1680); transform: rotate(90deg);}
+.leg26{top: calc((100% *  486) / 620); left: calc((100% *  1082) / 1680); transform: rotate(-45deg);}
+.leg27{top: calc((100% *  362) / 620); left: calc((100% *  1238) / 1680); transform: rotate(135deg);}
+.leg28{top: calc((100% *  280) / 620); left: calc((100% *  1352) / 1680);}
+.leg29{top: calc((100% *  268) / 620); left: calc((100% *  1572) / 1680); transform: rotate(90deg);}
 
                                 /*анимация*/
+@keyframes leg20 {
+  0%   {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
+  50%  {transform: rotate(135deg);left: calc((100% *  980) / 1680);  top: calc((100% *  450) / 620);}
+  100% {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
+}
+@keyframes leg12 {
+  0%   {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
+  50%  {transform: rotate(-90deg);  left: calc((100% *  670) / 1680);  top: calc((100% *  448) / 620);}
+  100% {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
+}
+@keyframes f27 {
+  0%   { top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
+  50%  {top: calc((100% *  366) / 620); left: calc((100% *  716) / 1680);}
+  100% {  top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
+}
+@keyframes leg13 {
+  0%   {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
+  50%  {transform: rotate(0deg) scaleY(-1); top: calc((100% *  376) / 620); left: calc((100% *  656) / 1680);}
+  100% {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
+}
 
-@keyframes move {
+
+
+
+
+
+
+@keyframes row_move {
     from {transform: translateX(100%);}
     to   {transform: translateX(  0%);}
   }
