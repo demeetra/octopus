@@ -78,6 +78,7 @@
   width: calc((100% * 76) / 1680);
   animation: hue 4s infinite linear;
 }
+
 .fluf:hover{  animation-play-state: paused;}
 
 .f1 {top: calc((100% * 80) / 1260);   left: calc((100% * 1000) / 1680);}
@@ -161,12 +162,40 @@
 }
 .boom1:hover{  animation-play-state: running;}
 
+                                                            /* второй октопус */
+.f{
+  height:  calc((100% * 45) / 1260);
+  width: calc((100% * 45) / 1680);
+}
+.f18{top: 3480px; left: 328px;}
+.f19{top: 3480px; left: 52px;}
+.f20{top: 3338px; left: 52px;}
+.f21{top: 3148px; left: 596px;}
+.f22{top: 3148px; left: 452px;}
+.f23{top: 3338px; left: 452px;}
+.f24{top: 3338px; left: 316px;}
+.f25{top: 3148px; left: 316px;}
+.f26{top: 3148px; left: 150px;}
+.f27{top: 3338px; left: 716px;}
+.f28{top: 3320px; left: 786px;}
+.f29{top: 3130px; left: 786px;}
+.f30{top: 3130px; left: 878px;}
+.f31{top: 2960px; left: 878px;}
+.f32{top: 3446px; left: 954px;}
+.f33{top: 3238px; left: 1030px;}
+.f34{top: 3238px; left: 1170px;}
+.f35{top: 3066px; left: 1170px;}
+.f36{top: 3066px; left: 1446px;}
+.f37{top: 3378px; left: 1202px;}
+.f38{top: 3280px; left: 1308px;}
+.f39{top: 3280px; left: 1580px;}
+
+                                                                          /*анимация*/
+
 @keyframes move {
     from {transform: translateX(100%);}
     to   {transform: translateX(  0%);}
-}                                                                                /*анимация*/
-
-
+  }
 @keyframes hue {
     /* green */
     0%    {filter: brightness(50%) sepia(1) hue-rotate(38deg)  saturate(295%)  brightness(110%);}
