@@ -73,7 +73,7 @@
     height: 30%;
   }
 }
-@media only screen and (min-width: 1440px) and (max-width: 1680px){
+@media only screen and (min-width: 1440px) and (max-width: 1679px){
   /* 1440x900 (MacBook Pro ’15) */
   .boom{
     width: 30%;
