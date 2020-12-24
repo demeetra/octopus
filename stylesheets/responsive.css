@@ -20,8 +20,7 @@
     margin-top: 14%;
   }
   .boom{
-    width: 100%;
-    height: 100%;
+    width: 50%;
     margin: 10% 0;
   }
 }
@@ -53,7 +52,6 @@
 @media only screen and (min-width: 1024px) and (max-width: 1080px){
 /* 1024x768 (iPad Landscape) */
 .text-center{
-  width: 80%;
   margin: 10% 10%;
   line-height: 40px;
 }
@@ -73,17 +71,15 @@
     height: 30%;
   }
 }
-@media only screen and (min-width: 1440px) and (max-width: 1679px){
+@media only screen and (min-width: 1440px) and (max-width: 1680px){
   /* 1440x900 (MacBook Pro ’15) */
   .boom{
     width: 30%;
     height: 30%;
   }
-  .text-center{
-    width: 70%;
-  }
+
 }
-@media only screen and (min-width: 1680px) {
+@media only screen and (min-width: 1681px) {
 /* 1680x1050 (MacBook Pro ’15.4) */
 .text-center{
   width: 70%;
