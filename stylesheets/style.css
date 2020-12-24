@@ -12,6 +12,25 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@property --angle {
+  syntax: 'angle';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --sin {
+  syntax: 'number';
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --cos {
+  syntax: 'number';
+  initial-value: 1;
+  inherits: false;
+}
+
   body {
     max-width: 1680px;
     width: 100%;
@@ -31,9 +50,9 @@
   }
   h1, h2 {font-family: "felix titling";}
   h6, h5 {font-family: 'helvetica';}
-  h1{font-size: min(150px, calc(150 * (100vw - 320px) / 1360 + 48 * (1680px - 100vw) / 1360));}
+  h1{font-size: min(150px, calc(150 * (100vw - 320px) / 1360 + 36 * (1680px - 100vw) / 1360));}
   h2{font-size: min(72px,   calc(72 * (100vw - 320px) / 1360 + 14 * (1680px - 100vw) / 1360));}
-  h5{font-size: min(44px,   calc(44 * (100vw - 320px) / 1360 + 13 * (1680px - 100vw) / 1360));}
+  h5{font-size: min(44px,   calc(44 * (100vw - 320px) / 1360 + 10 * (1680px - 100vw) / 1360));}
   h6{font-size: min(36px,   calc(36 * (100vw - 320px) / 1360 + 12 * (1680px - 100vw) / 1360));}
 
                                                                       /* логотип Октопуса */
@@ -42,8 +61,8 @@
   width: 100%;
   padding-bottom: 4%;
   position: absolute;
-  top: 100px;
-  left: 130px;
+  top: min(100px, calc(100 * (100vw - 320px) / 1360 + 20 * (1680px - 100vw) / 1360));
+  left: 7.74%;
   z-index: 2;
 
 
@@ -203,9 +222,22 @@
   height:  calc((100% * 43) / 620);
   width: calc((100% * 123) / 1680);
 }
-.f18{top: calc((100% *  508) / 620); left: calc((100% * 328)  / 1680);}
-.f19{top: calc((100% *  508) / 620); left: calc((100% *  52)  / 1680);}
-.f20{top: calc((100% *  366) / 620); left: calc((100% *  52)  / 1680);}
+.f18{
+  transform: rotate(var(--angle));
+  top: calc((100% *  508) / 620); left: calc((100% *  330)  / 1680);
+  transform-origin: calc(100% + min(100vw, 1680px) / 1680 * 230) bottom;
+  animation: leg1 2s infinite, hue 4s infinite linear;
+}
+.f19{
+    top: calc((100% *  508) / 620); left: calc((100% *  52)  / 1680);
+    transform: translateX(calc(min(100vw, 1680px) / 1680 * 300 * (1 - var(--cos)))) translateY(calc(min(100vw, 1680px) / 1680 * (0 - 260) * var(--sin)));
+    animation: leg1 2s infinite, hue 4s infinite linear;
+}
+.f20{
+    top: calc((100% *  366) / 620); left: calc((100% *  52)  / 1680);
+    transform: translateX(calc(min(100vw, 1680px) / 1680 * 300 * (1 - var(--cos)))) translateY(calc(min(100vw, 1680px) / 1680 * (0 - 260) * var(--sin)));
+    animation: leg1 2s infinite, hue 4s infinite linear;
+}
 .f21{top: calc((100% *  176) / 620); left: calc((100% *  596) / 1680);}
 .f22{top: calc((100% *  176) / 620); left: calc((100% *  452) / 1680);}
 .f23{top: calc((100% *  366) / 620); left: calc((100% *  452) / 1680);}
@@ -213,7 +245,8 @@
 .f25{top: calc((100% *  176) / 620); left: calc((100% *  316) / 1680);}
 .f26{top: calc((100% *  176) / 620); left: calc((100% *  150) / 1680);}
 .f27{
-  animation: f27 3s infinite, hue 4s infinite linear;
+  animation: f27 2s infinite, hue 4s infinite linear;
+  z-index: 1;
 }
 .f28{top: calc((100% *  348) / 620); left: calc((100% *  786) / 1680);}
 .f29{top: calc((100% *  158) / 620); left: calc((100% *  786) / 1680);}
@@ -234,10 +267,28 @@
   height:  calc((100% * 96) / 620);
   width: calc((100% * 552) / 1680);
 }
-.leg1 {top: calc((100% *  482) / 620); left: calc((100% *  374) / 1680);}
-.leg2 {top: calc((100% *  520) / 620); left: calc((100% *  98)  / 1680); transform: rotate(180deg);}
-.leg3 {top: calc((100% *  432) / 620); left: calc((100% *  40)  / 1680); transform: rotate(90deg);}
-.leg4 {top: calc((100% *  324) / 620); left: calc((100% *  40)  / 1680); transform: rotate(90deg);}
+.leg1 {
+  transform: rotate(var(--angle));
+  top: calc((100% *  482) / 620); left: calc((100% *  374) / 1680);
+  transform-origin: right bottom;
+    animation: leg1 2s infinite;
+}
+.leg2 {
+  top: calc((100% *  520) / 620);
+  left: calc((100% *  98)  / 1680);
+  transform: rotate(180deg) translateX(calc(min(100vw, 1680px) / 1680 * (0 - 300) * (1 - var(--cos)))) translateY(calc(min(100vw, 1680px) / 1680 * 260 * var(--sin)));
+  animation: leg1 2s infinite;
+}
+.leg3 {
+    top: calc((100% *  432) / 620); left: calc((100% *  40)  / 1680);
+    transform:  rotate(90deg) translateY(calc(min(100vw, 1680px) / 1680 * (0 - 300) * (1 - var(--cos)))) translateX(calc(min(100vw, 1680px) / 1680 * (0 - 260) * var(--sin)));
+    animation: leg1 2s infinite;
+}
+.leg4 {
+    top: calc((100% *  324) / 620); left: calc((100% *  40)  / 1680); transform: rotate(90deg);
+    transform:  rotate(90deg) translateY(calc(min(100vw, 1680px) / 1680 * (0 - 300) * (1 - var(--cos)))) translateX(calc(min(100vw, 1680px) / 1680 * (0 - 260) * var(--sin)));
+    animation: leg1 2s infinite;
+  }
 .leg5 {top: calc((100% *  360) / 620); left: calc((100% *  440) / 1680); transform: rotate(-90deg);}
 .leg6 {top: calc((100% *  156) / 620); left: calc((100% *  498) / 1680);}
 .leg7 {top: calc((100% *  280) / 620); left: calc((100% *  402) / 1680); transform: rotate(90deg);}
@@ -246,10 +297,11 @@
 .leg10{top: calc((100% *  184) / 620); left: calc((100% *  194) / 1680); transform: rotate(180deg);}
 .leg11{top: calc((100% *  130) / 620); left: calc((100% *  142) / 1680); transform: rotate(90deg) scaleY(-1);}
 .leg12{
-    animation: leg12 3s infinite;
+  /* transform-origin: right center; */
+    animation: leg12 2s infinite;
 }
 .leg13{
-    animation: leg13 3s infinite;
+    animation: leg13 2s infinite;
 }
 .leg14{top: calc((100% *  452) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
 .leg15{top: calc((100% *  260) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
@@ -272,11 +324,34 @@
 .leg29{top: calc((100% *  268) / 620); left: calc((100% *  1572) / 1680); transform: rotate(90deg);}
 
                                 /*анимация*/
-@keyframes leg20 {
-  0%   {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
-  50%  {transform: rotate(135deg);left: calc((100% *  980) / 1680);  top: calc((100% *  450) / 620);}
-  100% {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
+
+                                /* щупальца 1 */
+/* @keyframes leg1 {
+  0%   {transform: rotate(-20deg);}
+  50%  {transform: rotate(45deg);}
+  100% {transform: rotate(-20deg);}
+} */
+@keyframes leg1 {
+  0%   {--angle: 0deg; --sin: 0; --cos: 1;}
+  10%   {--angle: 10deg; --sin: 0.1736; --cos: 0.9876;}
+  20%   {--angle: 20deg; --sin: 0.3420; --cos: 0.9397;}
+  30%  {--angle: 30deg; --sin: 0.454; --cos: 0.891 }
+  40%  {--angle: 20deg; --sin: 0.3420; --cos: 0.9397;}
+  50% {--angle: 10deg; --sin: 0.1736; --cos: 0.9876;}
+  60%  {--angle: 0deg; --sin: 0; --cos: 1}
+  70%  {--angle: -10deg; --sin: -0.1736; --cos: 0.9876;}
+  80%  {--angle: -20deg; --sin: -0.3420; --cos: 0.9397;}
+  90%   {--angle: -10deg; --sin: -0.1736; --cos: 0.9876;}
+  100% {--angle: 0deg; --sin: 0; --cos: 1;}
 }
+/* @keyframes f18 {
+  0%   {transform: rotate(-20deg);}
+  50%  {transform: rotate(45deg);}
+  100% {transform: rotate(-20deg);}
+} */
+
+
+                                /* щупальца 3 */
 @keyframes leg12 {
   0%   {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
   50%  {transform: rotate(-90deg);  left: calc((100% *  670) / 1680);  top: calc((100% *  448) / 620);}
@@ -293,7 +368,12 @@
   100% {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
 }
 
-
+                                /* щупальца 6 */
+@keyframes leg20 {
+0%   {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
+50%  {transform: rotate(135deg);left: calc((100% *  980) / 1680);  top: calc((100% *  450) / 620);}
+100% {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
+}
 
 
 
