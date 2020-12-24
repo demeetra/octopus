@@ -45,7 +45,7 @@
   top: 1%;
 }
 .text-center{
-  width: 90%;
+  width: 80%;
   margin: 10% 10%;
   line-height: 40px;
 }
@@ -79,9 +79,13 @@
     width: 30%;
     height: 30%;
   }
-
+  .text-center{
+    width: 70%;
+  }
 }
 @media only screen and (min-width: 1680px) {
 /* 1680x1050 (MacBook Pro ’15.4) */
-
+.text-center{
+  width: 70%;
+}
 }

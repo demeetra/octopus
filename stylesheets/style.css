@@ -32,7 +32,7 @@
 }
 
   body {
-    max-width: 1680px;
+    /* max-width: 1680px; */
     width: 100%;
     background: #000000;
     position: relative;
@@ -49,7 +49,7 @@
     margin: 0 0;
   }
   h1, h2 {font-family: "felix titling";}
-  h6, h5 {font-family: 'helvetica';}
+  h6, h5, h7 {font-family: 'helvetica';}
   h1{font-size: min(150px, calc(150 * (100vw - 320px) / 1360 + 36 * (1680px - 100vw) / 1360));}
   h2{font-size: min(72px,   calc(72 * (100vw - 320px) / 1360 + 14 * (1680px - 100vw) / 1360));}
   h5{font-size: min(44px,   calc(44 * (100vw - 320px) / 1360 + 10 * (1680px - 100vw) / 1360));}
@@ -146,7 +146,7 @@
                                                                               /* центральный блок с текстом */
 .text-center{
   position: relative;
-  width: 100%;
+  width: 80%;
   margin: 78px 140px;
   line-height: 64px;
 }
@@ -166,26 +166,48 @@
   width: 500px;
   text-align: center;
   margin: 100px 20px 20px 20px;
-  background: #1233f3;
-  opacity: .3;
+  /* background: #1233f3;
+  opacity: .3; */
+
 }
+
 .boom1{
   height: 100%;
   width: 100%;
   display: block;
   position:relative;
-  background: url('../images/boom1.png');
-  overflow: hidden;
-  animation: boom 3s steps(1) infinite;
+  background: url('../images/boom1.svg');
+  animation: boom 3s steps(24) infinite;
+  animation-play-state: paused;
+}
+.boom2{
+  height: 100%;
+  width: 100%;
+  display: block;
+  position:relative;
+  background: url('../images/boom2.svg');
+  animation: boom 3s steps(24) infinite;
+  animation-play-state: paused;
+}
+.boom3{
+  height: 100%;
+  width: 100%;
+  display: block;
+  position:relative;
+  background: url('../images/boom3.svg');
+  animation: boom 3s steps(24) infinite;
   animation-play-state: paused;
 }
 .boom1:hover{  animation-play-state: running;}
+.boom2:hover{  animation-play-state: running;}
+.boom3:hover{  animation-play-state: running;}
 
                                                             /* второй октопус */
 .block2{
   position: relative;
   width: 100%;
   padding-bottom: 37%;
+  margin-top: 5%;
   /* background-color: #ffffff;
   opacity: .2; */
 }
@@ -322,8 +344,19 @@
 .leg27{top: calc((100% *  362) / 620); left: calc((100% *  1238) / 1680); transform: rotate(135deg);}
 .leg28{top: calc((100% *  280) / 620); left: calc((100% *  1352) / 1680);}
 .leg29{top: calc((100% *  268) / 620); left: calc((100% *  1572) / 1680); transform: rotate(90deg);}
-
-                                /*анимация*/
+/* 
+.futer{
+  position: relative;
+  width: 100%;
+  padding-bottom: 2%;
+}
+.adc{
+    margin: 0 5%;
+}
+.logotip{
+margin: 0 0 0 95%;
+}
+                                /*анимация*/ */
 
                                 /* щупальца 1 */
 /* @keyframes leg1 {
@@ -394,29 +427,8 @@
     66.6% {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
     100%  {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
   }
-  @keyframes boom {
-    0%    {background-position:  0px     -0px;}
-    4.3%  {background-position: -500px   -0px;}
-    8.6%  {background-position: -1000px  -0px;}
-    12.9% {background-position: -1500px  -0px;}
-    16.2% {background-position: -2000px  -0px;}
-    20.5% {background-position: -2500px  -0px;}
-    24.8% {background-position: -3000px  -0px;}
-    29.1% {background-position: -3500px  -0px;}
-    33.4% {background-position: -4000px  -0px;}
-    37.7% {background-position: -4500px  -0px;}
-    42%   {background-position: -4000px  -0px;}
-    46.3% {background-position: -5500px  -0px;}
-    50.6% {background-position: -6000px  -0px;}
-    54.9% {background-position: -6500px  -0px;}
-    59.2% {background-position: -7000px  -0px;}
-    63.5% {background-position: -7500px  -0px;}
-    67.8% {background-position: -8000px  -0px;}
-    72.1% {background-position: -8500px  -0px;}
-    76.4% {background-position: -9000px  -0px;}
-    80.7% {background-position: -9500px  -0px;}
-    85%   {background-position: -10000px -0px;}
-    89.3% {background-position: -10500px -0px;}
-    93.6% {background-position: -20000px -0px;}
 
+  @keyframes boom {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
   }
