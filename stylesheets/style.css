@@ -97,6 +97,17 @@
   width: calc((100% * 76) / 1680);
   animation: hue 4s infinite linear;
 }
+@keyframes hue {
+    /* green */
+    0%    {filter: brightness(50%) sepia(1) hue-rotate(38deg)  saturate(295%)  brightness(110%);}
+    33%   {filter: brightness(50%) sepia(1) hue-rotate(38deg)  saturate(295%)  brightness(110%);}
+    /* yelow */
+    33.3% {filter: brightness(50%) sepia(1) hue-rotate(0.5deg) saturate(384%)  brightness(120%);}
+    66.3% {filter: brightness(50%) sepia(1) hue-rotate(0.5deg) saturate(384%)  brightness(120%);}
+    /* pink */
+    66.6% {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
+    100%  {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
+  }
 
 .block1 .fluf:hover{
   animation-play-state: paused;
@@ -134,7 +145,10 @@
     height: 100%;
     animation: row_move 30s linear infinite;
 }
-
+@keyframes row_move {
+    from {transform: translateX(100%);}
+    to   {transform: translateX(  0%);}
+  }
 .row_before {
     right: 100%;
 }
@@ -144,6 +158,7 @@
 .colbasa{
   height: 100%;
 }
+
 
                                                                               /* центральный блок с текстом */
 .text-center{
@@ -203,6 +218,11 @@
   animation: boom 3s steps(24) infinite;
   animation-play-state: paused;
 }
+
+  @keyframes boom {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+  }
 .boom1:hover{  animation-play-state: running;}
 .boom2:hover{  animation-play-state: running;}
 .boom3:hover{  animation-play-state: running;}
@@ -275,6 +295,11 @@
   animation: f27 2s infinite, hue 4s infinite linear;
   z-index: 1;
 }
+@keyframes f27 {
+  0%   { top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
+  50%  {top: calc((100% *  366) / 620); left: calc((100% *  716) / 1680);}
+  100% {  top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
+}
 .f28{top: calc((100% *  348) / 620); left: calc((100% *  786) / 1680);}
 .f29{top: calc((100% *  158) / 620); left: calc((100% *  786) / 1680);}
 .f30{top: calc((100% *  158) / 620); left: calc((100% *  878) / 1680);}
@@ -338,7 +363,6 @@
   }
 }
 
-
 .head {
   top: calc((100% *  520) / 620); left: calc((100% *  588) / 1680);
   height:  calc((100% * 96) / 620);
@@ -352,7 +376,7 @@
 }
 @keyframes leg1 {
   0%   {--angle: 0deg;   --sin: 0;       --cos: 1;}
-  30%  {--angle: 30deg;  --sin: 0.454;   --cos: 0.891; }
+  30%  {--angle: 20deg;  --sin: 0.3420;   --cos: 0.9397; }
   60%  {--angle: 0deg;   --sin: 0;       --cos: 1;}
   80%  {--angle: -20deg; --sin: -0.3420; --cos: 0.9397;}
   100% {--angle: 0deg;   --sin: 0;       --cos: 1;}
@@ -381,12 +405,23 @@
 .leg10{top: calc((100% *  184) / 620); left: calc((100% *  194) / 1680); transform: rotate(180deg);}
 .leg11{top: calc((100% *  130) / 620); left: calc((100% *  142) / 1680); transform: rotate(90deg) scaleY(-1);}
 .leg12{
-  /* transform-origin: right center; */
+
     animation: leg12 2s infinite;
+}
+@keyframes leg12 {
+  0%   {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
+  50%  {transform: rotate(-90deg);  left: calc((100% *  670) / 1680);  top: calc((100% *  448) / 620);}
+  100% {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
 }
 .leg13{
     animation: leg13 2s infinite;
 }
+@keyframes leg13 {
+  0%   {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
+  50%  {transform: rotate(0deg) scaleY(-1); top: calc((100% *  376) / 620); left: calc((100% *  656) / 1680);}
+  100% {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
+}
+
 .leg14{top: calc((100% *  452) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
 .leg15{top: calc((100% *  260) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
 .leg16{top: calc((100% *  166) / 620); left: calc((100% *  726) / 1680); transform: scaleY(-1);}
@@ -396,6 +431,11 @@
 .leg20{
   top: calc((100% *  432) / 620);
   animation: leg20 3s infinite;
+}
+@keyframes leg20 {
+0%   {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
+50%  {transform: rotate(135deg);left: calc((100% *  980) / 1680);  top: calc((100% *  450) / 620);}
+100% {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
 }
 .leg21{top: calc((100% *  396) / 620); left: calc((100% *  954) / 1680); transform: rotate(90deg);}
 .leg22{top: calc((100% *  248) / 620); left: calc((100% *  1072) / 1680);}
@@ -516,68 +556,3 @@
     left: calc((100% *  1572) / 1680);
   }
 }
-
-                                /*анимация*/
-
-                                /* щупальца 1 */
-/* @keyframes leg1 {
-  0%   {transform: rotate(-20deg);}
-  50%  {transform: rotate(45deg);}
-  100% {transform: rotate(-20deg);}
-} */
-
-/* @keyframes f18 {
-  0%   {transform: rotate(-20deg);}
-  50%  {transform: rotate(45deg);}
-  100% {transform: rotate(-20deg);}
-} */
-
-
-                                /* щупальца 3 */
-@keyframes leg12 {
-  0%   {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
-  50%  {transform: rotate(-90deg);  left: calc((100% *  670) / 1680);  top: calc((100% *  448) / 620);}
-  100% {transform: rotate(-135deg); left: calc((100% *  640) / 1680);  top: calc((100% *  470) / 620);}
-}
-@keyframes f27 {
-  0%   { top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
-  50%  {top: calc((100% *  366) / 620); left: calc((100% *  716) / 1680);}
-  100% {  top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
-}
-@keyframes leg13 {
-  0%   {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
-  50%  {transform: rotate(0deg) scaleY(-1); top: calc((100% *  376) / 620); left: calc((100% *  656) / 1680);}
-  100% {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
-}
-
-                                /* щупальца 6 */
-@keyframes leg20 {
-0%   {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
-50%  {transform: rotate(135deg);left: calc((100% *  980) / 1680);  top: calc((100% *  450) / 620);}
-100% {transform: rotate(90deg); left: calc((100% *  946) / 1680);  top: calc((100% *  432) / 620);}
-}
-
-
-
-
-
-@keyframes row_move {
-    from {transform: translateX(100%);}
-    to   {transform: translateX(  0%);}
-  }
-@keyframes hue {
-    /* green */
-    0%    {filter: brightness(50%) sepia(1) hue-rotate(38deg)  saturate(295%)  brightness(110%);}
-    33%   {filter: brightness(50%) sepia(1) hue-rotate(38deg)  saturate(295%)  brightness(110%);}
-    /* yelow */
-    33.3% {filter: brightness(50%) sepia(1) hue-rotate(0.5deg) saturate(384%)  brightness(120%);}
-    66.3% {filter: brightness(50%) sepia(1) hue-rotate(0.5deg) saturate(384%)  brightness(120%);}
-    /* pink */
-    66.6% {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
-    100%  {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
-  }
-
-  @keyframes boom {
-    from {background-position: 0 0;}
-    to {background-position: 100% 0;}
-  }
