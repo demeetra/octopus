@@ -32,12 +32,11 @@
 }
 
   body {
-    /* max-width: 1680px; */
     width: 100%;
     background: #000000;
     position: relative;
-
-    /* height: 3690px; */
+    /* max-width: 1680px;
+    height: 3690px; */
   }
   html {
     background: #bbb;
@@ -65,15 +64,16 @@
   top: min(100px, calc(100 * (100vw - 320px) / 1360 + 20 * (1680px - 100vw) / 1360));
   left: 7.74%;
   z-index: 2;
-
-
 }
-                                                                  /* первый див с Октопусом (принадлежит к телу и пушинкам) */
+
+.overflow_wrapper {
+  overflow: hidden;
+}
+
 .block1{
   position: relative;
   width: 100%;
   padding-bottom: 75%;
-  overflow: hidden;
 }
 .firstoctopus{
   position:absolute;
