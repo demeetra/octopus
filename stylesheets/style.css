@@ -1,5 +1,4 @@
 @import 'reset.css';
-
 @font-face {
   font-family: "felix titling";
   src: url("../fonts/felix titling.ttf") format('truetype');
@@ -12,31 +11,25 @@
   font-style: normal;
   font-weight: normal;
 }
-
 @property --angle {
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }
-
 @property --sin {
   syntax: '<number>';
   initial-value: 0;
   inherits: false;
 }
-
 @property --cos {
   syntax: '<number>';
   initial-value: 1;
   inherits: false;
 }
-
   body {
     width: 100%;
     background: #000000;
     position: relative;
-    /* max-width: 1680px;
-    height: 3690px; */
   }
   html {
     background: #bbb;
@@ -54,8 +47,7 @@
   h2{font-size: min(72px,   calc(72 * (100vw - 320px) / 1360 + 14 * (1680px - 100vw) / 1360));}
   h5{font-size: min(44px,   calc(44 * (100vw - 320px) / 1360 + 10 * (1680px - 100vw) / 1360));}
   h6{font-size: min(36px,   calc(36 * (100vw - 320px) / 1360 + 12 * (1680px - 100vw) / 1360));}
-
-                                                                      /* логотип Октопуса */
+                                                                                                      /* логотип Октопуса */
 .logo{
   max-width: 712px;
   width: 100%;
@@ -65,11 +57,9 @@
   left: 7.74%;
   z-index: 2;
 }
-
 .overflow_wrapper {
   overflow: hidden;
 }
-
 .block1{
   position: relative;
   width: 100%;
@@ -82,7 +72,6 @@
   height: 100%;
   top: 0;
   left: 0;
-
 }
 .octopus1{
     top: calc((100% * (-70)) / 1260);
@@ -92,7 +81,6 @@
     position: absolute;
     transform: rotate(45deg);
 }
-                                                                        /*здесь начинаются пушинки*/
 .fluf{
   position: absolute;
   height:  calc((100% * 76) / 1260);
@@ -110,11 +98,9 @@
     66.6% {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
     100%  {filter: brightness(50%) sepia(1) hue-rotate(302deg) saturate(1100%) brightness(100%);}
   }
-
 .block1 .fluf:hover{
   animation-play-state: paused;
 }
-
 .f1 {top: calc((100% * 80) / 1260);   left: calc((100% * 1000) / 1680);}
 .f2 {top: calc((100% * 268) / 1260);  left: calc((100% * 986) / 1680);}
 .f3 {top: calc((100% * 420) / 1260);  left: calc((100% * 824) / 1680);}
@@ -132,14 +118,13 @@
 .f15{top: calc((100% * 566) / 1260);  left: calc((100% * 1374) / 1680);}
 .f16{top: calc((100% * 768) / 1260);  left: calc((100% * 1572) / 1680);}
 .f17{top: calc((100% * 546) / 1260);  left: calc((100% * 1536) / 1680);}
-                                                                             /*блок с бегущими строками*/
+                                                                                       /*блок с бегущими строками*/
 .row {
     position: relative;
     overflow: hidden;
     width: 100%;
     padding-bottom: 12.5%;
 }
-
 .row_after, .row_before {
     content: "";
     position: absolute;
@@ -160,8 +145,6 @@
 .colbasa{
   height: 100%;
 }
-
-
                                                                               /* центральный блок с текстом */
 .text-center{
   position: relative;
@@ -176,20 +159,14 @@
   text-align: center;
   margin-top: 100px;
 }
-
 .boom{
   position: relative;
   display: inline-block;
   vertical-align: top;
   width: 28%;
-  /* padding-bottom: 40%; */
   text-align: center;
   margin: 100px 20px 20px 20px;
-  /* background: #1233f3;
-  opacity: .3; */
-
 }
-
 .boom1{
   width: 100%;
   padding-bottom: 140%;
@@ -220,7 +197,6 @@
   animation: boom 3s steps(24) infinite;
   animation-play-state: paused;
 }
-
   @keyframes boom {
     from {background-position: 0 0;}
     to {background-position: 100% 0;}
@@ -228,20 +204,15 @@
 .boom1:hover{  animation-play-state: running;}
 .boom2:hover{  animation-play-state: running;}
 .boom3:hover{  animation-play-state: running;}
-
                                                             /* второй октопус */
 .block2{
   position: relative;
   width: 100%;
   padding-bottom: 37%;
   margin-top: 5%;
-  /* background-color: #ffffff;
-  opacity: .2; */
 }
-
 .octopus2{
   position: absolute;
-
 }
 .f{
   height:  calc((100% * 45) / 620);
@@ -311,21 +282,18 @@
 .f34{top: calc((100% *  266) / 620); left: calc((100% *  1170) / 1680);}
 .f35{top: calc((100% *  94)  / 620); left: calc((100% *  1170) / 1680);}
 .f36{top: calc((100% *  94)  / 620); left: calc((100% *  1446) / 1680);}
-
 .f37{
     top: calc((100% *  520) / 620); left: calc((100% *  1248) / 1680);
     transform-origin: calc(100% - min(100vw, 1680px) / 1680 * 186) center;
     animation: leg26 4s infinite, hue 4s infinite linear;
     z-index: 1;
 }
-
 .f38{
     top: calc((100% *  510) / 620); left: calc((100% *  1390) / 1680);
     transform-origin: calc(100% - min(100vw, 1680px) / 1680 * 298) center;
     animation: leg26 4s infinite, hue 4s infinite linear;
     z-index: 1;
 }
-
 .f39{
     top: calc((100% *  308) / 620);
     left: calc((100% *  1580) / 1680);
@@ -339,32 +307,27 @@
     top: calc((100% *  308) / 620);
     left: calc((100% *  1580) / 1680);
   }
-
   25%   {
     transform: rotate(-10deg);
     top: calc((100% *  388) / 620);
     left: calc((100% *  1560) / 1680);
   }
-
   50%   {
     transform: rotate(0deg);
     top: calc((100% *  308) / 620);
     left: calc((100% *  1580) / 1680);
   }
-
   75% {
     /*top: calc((100% *  520) / 620);
     left: calc((100% *  1260) / 1680);*/
     transform: rotate(54deg);
   }
-
   100%   {
     transform: rotate(0deg);
     top: calc((100% *  308) / 620);
     left: calc((100% *  1580) / 1680);
   }
 }
-
 .head {
   top: calc((100% *  520) / 620); left: calc((100% *  588) / 1680);
   height:  calc((100% * 96) / 620);
@@ -407,7 +370,6 @@
 .leg10{top: calc((100% *  184) / 620); left: calc((100% *  194) / 1680); transform: rotate(180deg);}
 .leg11{top: calc((100% *  130) / 620); left: calc((100% *  142) / 1680); transform: rotate(90deg) scaleY(-1);}
 .leg12{
-
     animation: leg12 2s infinite;
 }
 @keyframes leg12 {
@@ -423,7 +385,6 @@
   50%  {transform: rotate(0deg) scaleY(-1); top: calc((100% *  376) / 620); left: calc((100% *  656) / 1680);}
   100% {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
 }
-
 .leg14{top: calc((100% *  452) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
 .leg15{top: calc((100% *  260) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
 .leg16{top: calc((100% *  166) / 620); left: calc((100% *  726) / 1680); transform: scaleY(-1);}
@@ -444,114 +405,84 @@
 .leg23{top: calc((100% *  180) / 620); left: calc((100% *  1140) / 1680); transform: rotate(90deg);}
 .leg24{top: calc((100% *  66)  / 620); left: calc((100% *  1214) / 1680);}
 .leg25{top: calc((100% *  48)  / 620); left: calc((100% *  1438) / 1680); transform: rotate(90deg);}
-
 .leg26{
     top: calc((100% *  534) / 620); left: calc((100% *  1102) / 1680);
     transform-origin: left center;
     animation: leg26 4s infinite;
 }
-
 @keyframes leg26 {
-  0%   {
-    transform: rotate(-45deg);
-  }
-
-  25%   {
-    transform: rotate(0deg);
-  }
-
-  50%   {
-    transform: rotate(-45deg);
-  }
-
-  75%   {
-    transform: rotate(-75deg);
-  }
-
-  100%   {
-    transform: rotate(-45deg);
-  }
+  0%   {    transform: rotate(-45deg);  }
+  25%   {   transform: rotate(0deg);  }
+  50%   {   transform: rotate(-45deg);  }
+  75%   {   transform: rotate(-75deg);  }
+  100%   {  transform: rotate(-45deg);  }
 }
-
-
 .leg27{
     top: calc((100% *  504) / 620);
     left: calc((100% *  1294) / 1680);
     transform-origin: calc(100% - min(100vw, 1680px) / 1680 * 286) 75%;
     animation: leg26 4s infinite;
 }
-
 .leg28{
     top: calc((100% *  280) / 620);
     left: calc((100% *  1352) / 1680);
     transform-origin: left bottom;
     animation: leg28 4s infinite;
 }
-
 @keyframes leg28 {
   0%   {
     transform: rotate(0deg);
     top: calc((100% *  280) / 620);
     left: calc((100% *  1352) / 1680);
   }
-
   25%  {
     transform: rotate(-45deg);
     top: calc((100% *  488) / 620);
     left: calc((100% *  1454) / 1680);
   }
-
   50%   {
     transform: rotate(0deg);
     top: calc((100% *  280) / 620);
     left: calc((100% *  1352) / 1680);
   }
-
   75%   {
     transform: rotate(75deg);
     top: calc((100% *  240) / 620);
     left: calc((100% *  1200) / 1680);
   }
-
   100%   {
     transform: rotate(0deg);
     top: calc((100% *  280) / 620);
     left: calc((100% *  1352) / 1680);
   }
 }
-
 .leg29{
     top: calc((100% *  268) / 620);
     left: calc((100% *  1572) / 1680);
     transform: rotate(90deg);
     animation: leg29 4s infinite;
 }
-
 @keyframes leg29 {
   0%   {
     transform: rotate(90deg);
     top: calc((100% *  268) / 620);
     left: calc((100% *  1572) / 1680);
   }
-
   25%  {
     transform: rotate(45deg);
     top: calc((100% *  288) / 620);
     left: calc((100% *  1562) / 1680);
   }
-
   50%   {
     transform: rotate(90deg);
     top: calc((100% *  268) / 620);
     left: calc((100% *  1572) / 1680);
   }
-
   75%   {
     transform: rotate(110deg);
     top: calc((100% *  510) / 620);
     left: calc((100% *  1310) / 1680);
   }
-
   100%   {
     transform: rotate(90deg);
     top: calc((100% *  268) / 620);
