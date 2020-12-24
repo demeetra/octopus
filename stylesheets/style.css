@@ -36,6 +36,7 @@
     width: 100%;
     background: #000000;
     position: relative;
+
     /* height: 3690px; */
   }
   html {
@@ -72,6 +73,7 @@
   position: relative;
   width: 100%;
   padding-bottom: 75%;
+  overflow: hidden;
 }
 .firstoctopus{
   position:absolute;
