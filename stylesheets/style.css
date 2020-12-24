@@ -36,7 +36,7 @@
     width: 100%;
     background: #000000;
     position: relative;
-    height: 3690px;
+    /* height: 3690px; */
   }
   html {
     background: #bbb;
@@ -97,8 +97,10 @@
   width: calc((100% * 76) / 1680);
   animation: hue 4s infinite linear;
 }
-/*
-.fluf:hover{  animation-play-state: paused;} */
+
+.block1 .fluf:hover{
+  animation-play-state: paused;
+}
 
 .f1 {top: calc((100% * 80) / 1260);   left: calc((100% * 1000) / 1680);}
 .f2 {top: calc((100% * 268) / 1260);  left: calc((100% * 986) / 1680);}
@@ -146,7 +148,7 @@
                                                                               /* центральный блок с текстом */
 .text-center{
   position: relative;
-  width: 80%;
+  width: 75%;
   margin: 78px 140px;
   line-height: 64px;
 }
@@ -162,8 +164,8 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 580px;
-  width: 500px;
+  width: 28%;
+  /* padding-bottom: 40%; */
   text-align: center;
   margin: 100px 20px 20px 20px;
   /* background: #1233f3;
@@ -172,29 +174,32 @@
 }
 
 .boom1{
-  height: 100%;
   width: 100%;
+  padding-bottom: 140%;
   display: block;
   position:relative;
-  background: url('../images/boom1.svg');
+  background: url('../images/boom1.svg') no-repeat;
+  background-size: cover;
   animation: boom 3s steps(24) infinite;
   animation-play-state: paused;
 }
 .boom2{
-  height: 100%;
   width: 100%;
+  padding-bottom: 140%;
   display: block;
   position:relative;
-  background: url('../images/boom2.svg');
+  background: url('../images/boom2.svg') no-repeat;
+  background-size: cover;
   animation: boom 3s steps(24) infinite;
   animation-play-state: paused;
 }
 .boom3{
-  height: 100%;
   width: 100%;
+  padding-bottom: 125%;
   display: block;
   position:relative;
-  background: url('../images/boom3.svg');
+  background: url('../images/boom3.svg') no-repeat;
+  background-size: cover;
   animation: boom 3s steps(24) infinite;
   animation-play-state: paused;
 }
@@ -343,12 +348,19 @@
   transform: rotate(var(--angle));
   top: calc((100% *  482) / 620); left: calc((100% *  374) / 1680);
   transform-origin: right bottom;
-    animation: leg1 4s infinite;
+  animation: leg1 4s infinite;
+}
+@keyframes leg1 {
+  0%   {--angle: 0deg;   --sin: 0;       --cos: 1;}
+  30%  {--angle: 30deg;  --sin: 0.454;   --cos: 0.891; }
+  60%  {--angle: 0deg;   --sin: 0;       --cos: 1;}
+  80%  {--angle: -20deg; --sin: -0.3420; --cos: 0.9397;}
+  100% {--angle: 0deg;   --sin: 0;       --cos: 1;}
 }
 .leg2 {
-  top: calc((100% *  520) / 620);
+  top: calc((100% *  482) / 620);
   left: calc((100% *  98)  / 1680);
-  transform: rotate(180deg) translateX(calc(min(100vw, 1680px) / 1680 * (0 - 300) * (1 - var(--cos, 1)))) translateY(calc(min(100vw, 1680px) / 1680 * 260 * var(--sin, 0)));
+  transform: translateX(calc(min(100vw, 1680px) / 1680 * 300 * (1 - var(--cos, 1)))) translateY(calc(min(100vw, 1680px) / 1680 * -260 * var(--sin, 0)));
   animation: leg1 4s infinite;
 }
 .leg3 {
@@ -513,13 +525,7 @@
   50%  {transform: rotate(45deg);}
   100% {transform: rotate(-20deg);}
 } */
-@keyframes leg1 {
-  0%   {--angle: 0deg;   --sin: 0;       --cos: 1;}
-  30%  {--angle: 30deg;  --sin: 0.454;   --cos: 0.891; }
-  60%  {--angle: 0deg;   --sin: 0;       --cos: 1;}
-  80%  {--angle: -20deg; --sin: -0.3420; --cos: 0.9397;}
-  100% {--angle: 0deg;   --sin: 0;       --cos: 1;}
-}
+
 /* @keyframes f18 {
   0%   {transform: rotate(-20deg);}
   50%  {transform: rotate(45deg);}
