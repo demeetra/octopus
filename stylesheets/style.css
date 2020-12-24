@@ -366,10 +366,123 @@
   50%  {top: calc((100% *  366) / 620); left: calc((100% *  716) / 1680);}
   100% {  top: calc((100% *  400) / 620); left: calc((100% *  630) / 1680);}
 }
-.f28{top: calc((100% *  348) / 620); left: calc((100% *  786) / 1680);}
-.f29{top: calc((100% *  158) / 620); left: calc((100% *  786) / 1680);}
-.f30{top: calc((100% *  158) / 620); left: calc((100% *  878) / 1680);}
-.f31{top: calc((100% *  -12) / 620); left: calc((100% *  878) / 1680);}
+.f28{
+    top: calc((100% *  348) / 620);
+    left: calc((100% *  786) / 1680);
+    animation: f28 5s infinite, hue 4s infinite linear;
+    z-index: 1;
+}
+@keyframes f28 {
+  0%   {
+    transform: rotate(90deg);
+  }
+  25%  {
+    transform: rotate(45deg);
+  }
+  50%  {
+    transform: rotate(90deg);
+  }
+  75%  {
+    transform: rotate(105deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.f29{
+    top: calc((100% *  158) / 620);
+    left: calc((100% *  786) / 1680);
+    animation: f29 5s infinite, hue 4s infinite linear;
+    z-index: 1;
+}
+@keyframes f29 {
+  0%   {
+    top: calc((100% *  158) / 620);
+    left: calc((100% *  786) / 1680);
+    transform: rotate(90deg);
+  }
+  25%  {
+    top: calc((100% *  192) / 620);
+    left: calc((100% *  660) / 1680);
+    transform: rotate(45deg);
+  }
+  50%  {
+    top: calc((100% *  158) / 620);
+    left: calc((100% *  786) / 1680);
+    transform: rotate(90deg);
+  }
+  75%  {
+    top: calc((100% *  158) / 620);
+    left: calc((100% *  830) / 1680);
+    transform: rotate(105deg);
+  }
+  100% {
+    top: calc((100% *  158) / 620);
+    left: calc((100% *  786) / 1680);
+    transform: rotate(90deg);
+  }
+}
+
+.f30{
+    top: calc((100% *  158) / 620);
+    left: calc((100% *  878) / 1680);
+    animation: f30 3s infinite, hue 4s infinite linear;
+    z-index: 1;
+}
+@keyframes f30 {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-45deg);
+  }
+  50%  {
+    transform: rotate(0deg);
+  }
+  75%  {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.f31{
+    top: calc((100% *  -12) / 620);
+    left: calc((100% *  878) / 1680);
+    animation: f31 3s infinite, hue 4s infinite linear;
+    z-index: 1;
+}
+@keyframes f31 {
+  0%   {
+    top: calc((100% *  -12) / 620);
+    left: calc((100% *  878) / 1680);
+    transform: rotate(0deg);
+  }
+  25%  {
+    top: calc((100% *  26) / 620);
+    left: calc((100% *  764) / 1680);
+    transform: rotate(-45deg);
+  }
+  50%  {
+    top: calc((100% *  -12) / 620);
+    left: calc((100% *  878) / 1680);
+    transform: rotate(0deg);
+  }
+  75%  {
+    top: calc((100% *  26) / 620);
+    left: calc((100% *  988) / 1680);
+    transform: rotate(30deg);
+  }
+  100% {
+    top: calc((100% *  -12) / 620);
+    left: calc((100% *  878) / 1680);
+    transform: rotate(0deg);
+  }
+}
+
 .f32{top: calc((100% *  474) / 620); left: calc((100% *  954) / 1680);}
 .f33{
     top: calc((100% *  266) / 620);
@@ -639,11 +752,149 @@
   100% {transform: rotate(90deg) scaleY(-1); left: calc((100% *  620) / 1680);  top: calc((100% *  356) / 620);}
 }
 .leg14{top: calc((100% *  452) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
-.leg15{top: calc((100% *  260) / 620); left: calc((100% *  736) / 1680); transform: rotate(90deg);}
-.leg16{top: calc((100% *  166) / 620); left: calc((100% *  726) / 1680); transform: scaleY(-1);}
+.leg15{
+    top: calc((100% *  260) / 620);
+    left: calc((100% *  736) / 1680);
+    transform: rotate(90deg);
+    animation: leg15 5s infinite;
+}
+@keyframes leg15 {
+  0%   {
+    top: calc((100% *  260) / 620);
+    left: calc((100% *  736) / 1680);
+    transform: rotate(90deg);
+  }
+  25%  {
+    top: calc((100% *  276) / 620);
+    left: calc((100% *  680) / 1680);
+    transform: rotate(45deg);
+  }
+  50%  {
+    top: calc((100% *  260) / 620);
+    left: calc((100% *  736) / 1680);
+    transform: rotate(90deg);
+  }
+  75%  {
+    top: calc((100% *  264) / 620);
+    left: calc((100% *  756) / 1680);
+    transform: rotate(105deg);
+  }
+  100% {
+    top: calc((100% *  260) / 620);
+    left: calc((100% *  736) / 1680);
+    transform: rotate(90deg);
+  }
+}
+
+
+.leg16{
+    top: calc((100% *  166) / 620);
+    left: calc((100% *  726) / 1680);
+    transform: scaleY(-1);
+    animation: leg16 5s infinite;
+}
+@keyframes leg16 {
+  0%   {
+    top: calc((100% *  166) / 620);
+    left: calc((100% *  726) / 1680);
+    transform: scaleY(-1);
+    transform: rotate(0deg);
+  }
+  25%  {
+    top: calc((100% *  146) / 620);
+    left: calc((100% *  646) / 1680);
+    transform: scaleY(-1);
+    transform: rotate(90deg);
+  }
+  50%  {
+    top: calc((100% *  166) / 620);
+    left: calc((100% *  726) / 1680);
+    transform: scaleY(-1);
+    transform: rotate(0deg);
+  }
+  75%  {
+    top: calc((100% *  188) / 620);
+    left: calc((100% *  778) / 1680);
+    transform: scaleY(-1);
+    transform: rotate(-45deg);
+  }
+  100% {
+    top: calc((100% *  166) / 620);
+    left: calc((100% *  726) / 1680);
+    transform: scaleY(-1);
+    transform: rotate(0deg);
+  }
+}
+
 .leg17{top: calc((100% *  342) / 620); left: calc((100% *  748) / 1680); transform: rotate(90deg);}
-.leg18{top: calc((100% *  72)  / 620); left: calc((100% *  848) / 1680); transform: rotate(90deg);}
-.leg19{top: calc((100% *  0)   / 620); left: calc((100% *  926) / 1680); transform: rotate(180deg);}
+.leg18{
+    top: calc((100% *  72)  / 620);
+    left: calc((100% *  848) / 1680);
+    transform: rotate(90deg);
+    animation: leg18 3s infinite;
+
+}
+@keyframes leg18 {
+  0%   {
+    top: calc((100% *  72)  / 620);
+    left: calc((100% *  848) / 1680);
+    transform: rotate(90deg);
+  }
+  25%  {
+    top: calc((100% *  84)  / 620);
+    left: calc((100% *  788) / 1680);
+    transform: rotate(45deg);
+  }
+  50%  {
+    top: calc((100% *  72)  / 620);
+    left: calc((100% *  848) / 1680);
+    transform: rotate(90deg);
+  }
+  75%  {
+    top: calc((100% *  98)  / 620);
+    left: calc((100% *  900) / 1680);
+    transform: rotate(135deg);
+  }
+  100% {
+    top: calc((100% *  72)  / 620);
+    left: calc((100% *  848) / 1680);
+    transform: rotate(90deg);
+  }
+}
+
+.leg19{
+    top: calc((100% *  0)   / 620);
+    left: calc((100% *  926) / 1680);
+    transform: rotate(180deg);
+    animation: leg19 3s infinite;
+}
+@keyframes leg19 {
+  0%   {
+    top: calc((100% *  0)   / 620);
+    left: calc((100% *  926) / 1680);
+    transform: rotate(180deg);
+  }
+  25%  {
+    top: calc((100% *  -4)   / 620);
+    left: calc((100% *  800) / 1680);
+    transform: rotate(135deg);
+  }
+  50%  {
+    top: calc((100% *  0)   / 620);
+    left: calc((100% *  926) / 1680);
+    transform: rotate(180deg);
+  }
+  75%  {
+    top: calc((100% *  2)   / 620);
+    left: calc((100% *  1026) / 1680);
+    transform: rotate(135deg);
+  }
+  100% {
+    top: calc((100% *  0)   / 620);
+    left: calc((100% *  926) / 1680);
+    transform: rotate(180deg);
+  }
+}
 
 .leg20{
   top: calc((100% *  432) / 620);
